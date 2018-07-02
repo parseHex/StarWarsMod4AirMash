@@ -24331,7 +24331,7 @@ function SWAM() {
         Bt.lastMessageTime = new Date().getTime();
         let Wt = -1 < $.inArray(Xt.toUpperCase(), ["-SWAM-PING"]);
         for (var jt of Yt) Wt = Wt || Xt.startsWith(jt);
-        if (!Wt) {
+        // if (!Wt) {
             let zt = Xt.match(getURLRegEx());
             if (null != zt) {
                 let qt = Xt.split(getURLRegEx());
@@ -24341,7 +24341,7 @@ function SWAM() {
             UI_addChatLine.call(UI, Bt, Xt, Gt, !1);
             let Vt = UI.getIgnored();
             Vt[Bt.id] || SWAM.trigger("chatLineAdded", [Bt, Xt, Gt])
-        } else {
+        // } else {
             // let zt = Xt;
             // if (Xt = Xt.toUpperCase(), "-SWAM-PING" == Xt) {
             //     if (Bt.id != game.myID && !window.anonmod) {
@@ -24356,7 +24356,7 @@ function SWAM() {
             //         qt = zt.substring(14).trim();
             //     UI_addChatLine.call(UI, Bt, `I'm using STARMASH, ${Vt}, theme: ${qt}`, Gt)
             // }
-        }
+        // }
     };
     let UI_updateScore = UI.updateScore;
     UI.updateScore = function(Bt) {
